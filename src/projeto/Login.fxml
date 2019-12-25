@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="247.0" prefWidth="724.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.LoginController">
+   <children>
+      <Pane fx:id="pnlLogin" layoutX="14.0" prefHeight="247.0" prefWidth="724.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="lblCodenome" layoutX="19.0" layoutY="7.0" text="Codenome">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txfdCodenome" layoutX="19.0" layoutY="32.0" prefHeight="33.0" prefWidth="314.0" />
+            <Label fx:id="lblSenha" layoutX="18.0" layoutY="71.0" text="Senha">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Button layoutX="271.0" layoutY="211.0" mnemonicParsing="false" onAction="#Logar" style="-fx-background-color: green;" text="Logar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <RadioButton fx:id="rbtnAdmin" layoutX="25.0" layoutY="220.0" mnemonicParsing="false" text="Administrador" />
+            <RadioButton fx:id="rbtnParticipante" layoutX="145.0" layoutY="221.0" mnemonicParsing="false" text="Participante" />
+            <ImageView fitHeight="247.0" fitWidth="355.0" layoutX="374.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@files/images/hacker.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="22.0" layoutY="189.0" text="Voce é?">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="157.0" text="usuário ou senha incorretos" textFill="#eb0505" visible="false" />
+            <Hyperlink layoutX="16.0" layoutY="157.0" onAction="#abrirCadastro" text="Ainda não sou cadastrado">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Hyperlink>
+            <Label fx:id="lblErro" layoutX="19.0" layoutY="135.0" text="Não existe ninguém com esse codenome" textFill="RED" visible="false">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="txfdSenha" layoutX="19.0" layoutY="96.0" prefHeight="33.0" prefWidth="314.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

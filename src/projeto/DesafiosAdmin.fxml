@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="555.0" prefWidth="969.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.DesafiosController">
+   <children>
+      <ScrollPane prefHeight="557.0" prefWidth="969.0">
+         <content>
+            <TableView fx:id="tbvDesafios" prefHeight="557.0" prefWidth="969.0">
+              <columns>
+                <TableColumn fx:id="tbcNumero" editable="false" prefWidth="187.0" style="-fx-alignment: center;" text="Número" />
+                <TableColumn fx:id="tbcNome" editable="false" prefWidth="418.0" style="-fx-alignment: center;" text="Nome" />
+                  <TableColumn fx:id="tbcPontos" editable="false" prefWidth="147.0" style="-fx-alignment: center;" text="Pontos" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

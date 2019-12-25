@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="399.0" prefWidth="778.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="lblTitulo" layoutX="308.0" layoutY="21.0" text="Desafio">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txaDescricao" editable="false" layoutX="19.0" layoutY="87.0" prefHeight="226.0" prefWidth="496.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vestibulum at sapien nec pharetra. Donec vulputate, urna in lobortis dapibus, libero elit vestibulum ipsum, eu malesuada leo nisl eu mauris. Nunc ultrices quam sed commodo lacinia. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse faucibus pulvinar mauris non congue. Praesent a malesuada orci, at lobortis lacus. " wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <RadioButton fx:id="rbtnA" layoutX="19.0" layoutY="346.0" mnemonicParsing="false" text="Opção 1" />
+      <RadioButton fx:id="rbtnB" layoutX="151.0" layoutY="346.0" mnemonicParsing="false" text="Opção 2" />
+      <RadioButton fx:id="rbtnC" layoutX="299.0" layoutY="346.0" mnemonicParsing="false" text="Opção 3" />
+      <RadioButton fx:id="rbtnD" layoutX="436.0" layoutY="346.0" mnemonicParsing="false" text="Opção 4" />
+      <Button layoutX="540.0" layoutY="173.0" mnemonicParsing="false" onAction="#testaResposta" prefHeight="45.0" prefWidth="216.0" style="-fx-background-color: green;" text="Finalizar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="cronometro" layoutX="564.0" layoutY="230.0" text="01:00">
+         <font>
+            <Font name="Arial Black" size="48.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnComecar" layoutX="540.0" layoutY="113.0" mnemonicParsing="false" onAction="#comecar" prefHeight="45.0" prefWidth="216.0" style="-fx-background-color: green;" text="Começar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblPontosNormais" layoutX="576.0" layoutY="314.0" text="Pontos normais:" textFill="GREEN" visible="false">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPontosExtras" layoutX="584.0" layoutY="342.0" text="Pontos extras:" textFill="GREEN" visible="false">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

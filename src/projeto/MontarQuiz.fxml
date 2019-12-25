@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="636.0" prefWidth="457.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.MontarQuizController">
+   <children>
+      <TextField fx:id="txfdNome" layoutX="140.0" layoutY="40.0" prefHeight="31.0" prefWidth="279.0" />
+      <Label layoutX="29.0" layoutY="47.0" text="Nome Desafio">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txaDescricao" layoutX="31.0" layoutY="109.0" prefHeight="236.0" prefWidth="386.0" />
+      <Label layoutX="31.0" layoutY="82.0" text="Descrição">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="363.0" text="Opção A">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txfdOpcaoA" layoutX="91.0" layoutY="358.0" prefHeight="31.0" prefWidth="126.0" />
+      <TextField fx:id="txfdOpcaoB" layoutX="290.0" layoutY="358.0" prefHeight="31.0" prefWidth="126.0" />
+      <Label layoutX="228.0" layoutY="363.0" text="Opção B">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="229.0" layoutY="403.0" text="Opção D">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txfdOpcaoD" layoutX="291.0" layoutY="398.0" prefHeight="31.0" prefWidth="126.0" />
+      <TextField fx:id="txfdOpcaoC" layoutX="92.0" layoutY="398.0" prefHeight="31.0" prefWidth="126.0" />
+      <Label layoutX="30.0" layoutY="403.0" text="Opção C">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rbtnA" layoutX="28.0" layoutY="488.0" mnemonicParsing="false" text="A" />
+      <RadioButton fx:id="rbtnB" layoutX="155.0" layoutY="488.0" mnemonicParsing="false" text="B" />
+      <Label layoutX="169.0" layoutY="452.0" text="Resposta certa">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rbtnC" layoutX="276.0" layoutY="488.0" mnemonicParsing="false" text="C" />
+      <RadioButton fx:id="rbtnD" layoutX="387.0" layoutY="489.0" mnemonicParsing="false" text="D" />
+      <TextField fx:id="txfdPontos" layoutX="91.0" layoutY="533.0" prefHeight="31.0" prefWidth="80.0" />
+      <Label layoutX="29.0" layoutY="538.0" text="Pontos">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="190.0" layoutY="538.0" text="Tempo">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txfdTempoMinutos" layoutX="257.0" layoutY="533.0" prefHeight="31.0" prefWidth="72.0" promptText="Minutos" />
+      <TextField fx:id="txfdTempoSegundos" layoutX="344.0" layoutY="533.0" prefHeight="31.0" prefWidth="72.0" promptText="Segundos" />
+      <Button layoutX="203.0" layoutY="589.0" mnemonicParsing="false" onAction="#salvarNoArquivo" style="-fx-background-color: green;" text="Salvar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
